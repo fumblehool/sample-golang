@@ -4,3 +4,4 @@ services:
   github:
     repo: digitalocean/sample-golang
     branch: main
+  build_command: which go && go version && go mod tidy && go mod vendor && go build -o bin/hms ./main.go
