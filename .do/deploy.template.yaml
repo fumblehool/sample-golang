@@ -5,3 +5,4 @@ spec:
     git:
       branch: main
       repo_clone_url: https://github.com/digitalocean/sample-golang.git
+    build_command: which go && go version && go mod tidy && go mod vendor && go build -o bin/hms ./main.go
